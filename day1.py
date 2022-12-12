@@ -1,4 +1,4 @@
-f = open("day1.txt",'r')
+f = open("inputs/day1.txt",'r')
 sum = []
 x =0
 for i in f:

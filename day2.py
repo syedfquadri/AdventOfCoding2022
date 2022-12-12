@@ -1,4 +1,4 @@
-f = open("day2.txt",'r')
+f = open("inputs/day2.txt",'r')
 s = {'X':-1,'Y':0,'Z':1}
 o = {'A':1,'B':2,'C':3}
 e = 0
