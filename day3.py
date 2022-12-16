@@ -21,7 +21,6 @@ d = {0:[],1:[],2:[]}
 for idx,i in enumerate(f):
     i = i.strip('\n')
     if idx ==299:
-        print(idx)
         d[idx%3]=list(i)
     if (idx%3 ==0 and idx!=0) or idx==299:
         c_1_2 = [k for k in d[0] if k in d[1]]
