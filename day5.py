@@ -11,15 +11,15 @@ dct = {1: ["P","D","Q","R","V","B","H","F"],
        }
 for i in dct:
     dct[i] = dct[i][::-1]
-    
+
 ######### PART 1 ############
-# for i in f:
-#     i = i.strip().split(' ')
-#     for j in range(int(i[1])):
-#         dct[int(i[-1])].append(dct[int(i[3])][-1])
-#         dct[int(i[3])].pop()
-# z = ""
-# for i in dct:
-#     print(dct[i][-1])
-#     z += dct[i][-1]
-# print(f"z: {z}")
+for i in f:
+    i = i.strip().split(' ')
+    dct[int(i[-1])].extend(dct[int(i[3])][-int(i[1]):])
+    for j in range(int(i[1])):
+        dct[int(i[3])].pop()
+z = ""
+for i in dct:
+    z += dct[i][-1]
+print(f"z: {z}")
+
