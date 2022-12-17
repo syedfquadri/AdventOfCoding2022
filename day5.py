@@ -12,7 +12,6 @@ dct = {1: ["P","D","Q","R","V","B","H","F"],
 for i in dct:
     dct[i] = dct[i][::-1]
 
-######### PART 1 ############
 for i in f:
     i = i.strip().split(' ')
     dct[int(i[-1])].extend(dct[int(i[3])][-int(i[1]):])
